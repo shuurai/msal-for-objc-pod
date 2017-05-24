@@ -1,6 +1,6 @@
 # MSAL
 
-[![CI Status](http://img.shields.io/travis/acct<blob>=0x50617373776F726473C2A06E6F74C2A07361766564  Passwords0240not0240saved/MSAL.svg?style=flat)](https://travis-ci.org/acct<blob>=0x50617373776F726473C2A06E6F74C2A07361766564  Passwords0240not0240saved/MSAL)
+[![CI Status](http://img.shields.io/travis/shuurai/MSAL.svg?style=flat)](https://travis-ci.org/shuurai/MSAL)
 [![Version](https://img.shields.io/cocoapods/v/MSAL.svg?style=flat)](http://cocoapods.org/pods/MSAL)
 [![License](https://img.shields.io/cocoapods/l/MSAL.svg?style=flat)](http://cocoapods.org/pods/MSAL)
 [![Platform](https://img.shields.io/cocoapods/p/MSAL.svg?style=flat)](http://cocoapods.org/pods/MSAL)
@@ -10,6 +10,8 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+Note: This is pulls from the official MSAL repo version 0.1.1. Tests are not implemented in this pod as the original source code is expected to be thoroughly tested by the MS team.
 
 ## Installation
 
@@ -22,7 +24,7 @@ pod "MSAL"
 
 ## Author
 
-acct<blob>=0x50617373776F726473C2A06E6F74C2A07361766564  Passwords0240not0240saved, hyperfan@hotmail.com
+shuurai, hyperfan@hotmail.com
 
 ## License
 
