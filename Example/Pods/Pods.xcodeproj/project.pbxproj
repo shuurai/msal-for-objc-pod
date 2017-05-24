@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0338C41EE5507C885BA63EA1884AF033 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6666D2D80DD9AEB6E6D679F8112EE5 /* ReplaceMe.m */; };
 		29BB22DF28B2DF9CB4697BAA09878AEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		449549B686DABB3212324ABA5239C6FE /* Pods-MSAL_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B68D7DE9964B6C36C64F8E65AC9DD7 /* Pods-MSAL_Example-dummy.m */; };
 		44A6598BAD8CD2F54B44630B73AA678B /* Pods-MSAL_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05119F6D722ED6EC6448F6D087279859 /* Pods-MSAL_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -258,7 +257,6 @@
 		BAB04A221ED53613006AB40B /* MSALResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSALResult.h; sourceTree = "<group>"; };
 		C0B68D7DE9964B6C36C64F8E65AC9DD7 /* Pods-MSAL_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MSAL_Example-dummy.m"; sourceTree = "<group>"; };
 		C482BA3AF3C2310B189989B87FD6F8E3 /* MSAL-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSAL-umbrella.h"; sourceTree = "<group>"; };
-		CF6666D2D80DD9AEB6E6D679F8112EE5 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		D4EE2AC4D3F602A7F7C3DECCC8F7CD84 /* MSAL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MSAL-dummy.m"; sourceTree = "<group>"; };
 		D981AF5B2DA827D17ABA29CEE86744AB /* Pods-MSAL_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MSAL_Tests-dummy.m"; sourceTree = "<group>"; };
 		F6F15207A8DC0E0757D7C96387405DC9 /* Pods-MSAL_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSAL_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -322,7 +320,6 @@
 		40FC53E89FBDF66CB42DC5FB2043E7A0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CF6666D2D80DD9AEB6E6D679F8112EE5 /* ReplaceMe.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -871,7 +868,6 @@
 				BAB049B91ED53091006AB40B /* MSALAuthority.m in Sources */,
 				BAB049C61ED53091006AB40B /* MSALError.m in Sources */,
 				BAB049EC1ED53091006AB40B /* MSALOAuth2Response.m in Sources */,
-				0338C41EE5507C885BA63EA1884AF033 /* ReplaceMe.m in Sources */,
 				BAB049E81ED53091006AB40B /* MSALBaseRequest.m in Sources */,
 				BAB049B71ED53091006AB40B /* MSALAdfsAuthorityResolver.m in Sources */,
 				BAB049FC1ED53091006AB40B /* MSALTelemetryAPIEvent.m in Sources */,

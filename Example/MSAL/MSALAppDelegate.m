@@ -5,6 +5,7 @@
 //  Created by acct<blob>=0x50617373776F726473C2A06E6F74C2A07361766564  Passwords0240not0240saved on 05/24/2017.
 //  Copyright (c) 2017 acct<blob>=0x50617373776F726473C2A06E6F74C2A07361766564  Passwords0240not0240saved. All rights reserved.
 //
+#import <MSAL/MSAL.h>
 
 #import "MSALAppDelegate.h"
 
@@ -13,6 +14,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options
+{
+    
+    [MSALPublicClientApplication handleMSALResponse:url];
+    
     return YES;
 }
 
