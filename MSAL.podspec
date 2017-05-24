@@ -46,4 +46,9 @@ Pod::Spec.new do |s|
   s.xcconfig     = { 'OTHER_LDFLAGS' => '-ObjC' }
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+
+  s.prepare_command = <<-CMD
+      git submodule update --init --recursive
+  CMD
+
 end
