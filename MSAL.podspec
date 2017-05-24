@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
     Note that for the preview, only iOS is supported with this pod.
                        DESC
 
-  s.homepage         = 'https://github.com/shuurai/microsoft-authentication-library-for-objc'
+  s.homepage         = 'https://github.com/shuurai/msal-for-objc-pod.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'shuurai' => 'hyperfan@hotmail.com' }
@@ -34,10 +34,10 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.3'
 
-  s.prefix_header_file = 'MSAL/AzureSource/MSAL/src/MSAL.pch'
-  s.public_header_files = 'MSAL/AzureSource/MSAL/src/public/MSALResult.h', 'MSAL/AzureSource/MSAL/src/public/MSALUIBehavior.h', 'MSAL/AzureSource/MSAL/src/public/MSALUser.h', 'MSAL/AzureSource/MSAL/src/public/MSALTelemetry.h', 'MSAL/AzureSource/MSAL/src/public/MSALError.h', 'MSAL/AzureSource/MSAL/src/public/MSALPublicClientApplication.h', 'MSAL/AzureSource/MSAL/src/public/MSAL.h', 'MSAL/AzureSource/MSAL/src/public/MSALLogger.h'
-  s.source_files = 'MSAL/AzureSource/MSAL/src/**/*.{h,m}'
-  s.exclude_files = 'MSAL/AzureSource/MSAL/src/cache/mac/*', 'MSAL/AzureSource/MSAL/src/public/mac/*', 'MSAL/AzureSource/MSAL/src/ui/mac/*'
+  s.prefix_header_file = 'MSAL/src/MSAL.pch'
+  s.public_header_files = 'MSAL/src/public/MSALResult.h', 'MSAL/src/public/MSALUIBehavior.h', 'MSAL/src/public/MSALUser.h', 'MSAL/src/public/MSALTelemetry.h', 'MSAL/src/public/MSALError.h', 'MSAL/src/public/MSALPublicClientApplication.h', 'MSAL/src/public/MSAL.h', 'MSAL/src/public/MSALLogger.h'
+  s.source_files = 'MSAL/src/**/*.{h,m}'
+  s.exclude_files = 'MSAL/src/cache/mac/*', 'MSAL/src/public/mac/*', 'MSAL/src/ui/mac/*'
   
   # s.resource_bundles = {
   #   'MSAL' => ['MSAL/Assets/*.png']
