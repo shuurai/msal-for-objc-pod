@@ -1,0 +1,16 @@
+PODS:
+  - MSAL (0.1.0)
+
+DEPENDENCIES:
+  - MSAL (from `../`)
+
+EXTERNAL SOURCES:
+  MSAL:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MSAL: 9f4a21ca5ce146c4720ac1eae1e2ace38168a8cf
+
+PODFILE CHECKSUM: 3ffdc376ce4799d86837093d8e4bddaeadcb56a1
+
+COCOAPODS: 1.2.1

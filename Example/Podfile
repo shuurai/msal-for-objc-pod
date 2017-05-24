@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MSAL_Example' do
+  pod 'MSAL', :path => '../'
+
+  target 'MSAL_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
