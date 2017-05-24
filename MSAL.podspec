@@ -28,16 +28,16 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/shuurai/microsoft-authentication-library-for-objc'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'acct<blob>=0x50617373776F726473C2A06E6F74C2A07361766564  Passwords0240not0240saved' => 'hyperfan@hotmail.com' }
-  s.source           = { :git => 'https://github.com/acct<blob>=0x50617373776F726473C2A06E6F74C2A07361766564  Passwords0240not0240saved/MSAL.git', :tag => s.version.to_s }
+  s.author           = { 'shuurai' => 'hyperfan@hotmail.com' }
+  s.source           = { :git => 'https://github.com/shuurai/msal-for-objc-pod.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.3'
 
-  s.prefix_header_file = 'MSAL/src/MSAL.pch'
-  s.public_header_files = 'MSAL/src/public/MSALResult.h', 'MSAL/src/public/MSALUIBehavior.h', 'MSAL/src/public/MSALUser.h', 'MSAL/src/public/MSALTelemetry.h', 'MSAL/src/public/MSALError.h', 'MSAL/src/public/MSALPublicClientApplication.h', 'MSAL/src/public/MSAL.h', 'MSAL/src/public/MSALLogger.h'
-  s.source_files = 'MSAL/src/**/*.m'
-  s.exclude_files = 'MSAL/src/**/mac'
+  s.prefix_header_file = 'MSAL/AzureSource/MSAL/src/MSAL.pch'
+  s.public_header_files = 'MSAL/AzureSource/MSAL/src/public/MSALResult.h', 'MSAL/AzureSource/MSAL/src/public/MSALUIBehavior.h', 'MSAL/AzureSource/MSAL/src/public/MSALUser.h', 'MSAL/AzureSource/MSAL/src/public/MSALTelemetry.h', 'MSAL/AzureSource/MSAL/src/public/MSALError.h', 'MSAL/AzureSource/MSAL/src/public/MSALPublicClientApplication.h', 'MSAL/AzureSource/MSAL/src/public/MSAL.h', 'MSAL/AzureSource/MSAL/src/public/MSALLogger.h'
+  s.source_files = 'MSAL/AzureSource/MSAL/src/**/*.{h,m}'
+  s.exclude_files = 'MSAL/AzureSource/MSAL/src/cache/mac/*', 'MSAL/AzureSource/MSAL/src/public/mac/*', 'MSAL/AzureSource/MSAL/src/ui/mac/*'
   
   # s.resource_bundles = {
   #   'MSAL' => ['MSAL/Assets/*.png']
