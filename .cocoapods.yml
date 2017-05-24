@@ -1,0 +1,5 @@
+try:
+  install:
+    pre:
+      - echo "MSAL Pod requires the original MSAL.framework, updating git submodules..."
+      - git submodule update --init --recursive
