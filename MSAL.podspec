@@ -10,17 +10,10 @@ Pod::Spec.new do |s|
   s.name             = 'MSAL'
   s.version          = '0.2.1'
   s.summary          = 'Microsoft Access Layer POD.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = <<-DESC
     The MSAL library preview for iOS gives your app the ability to begin using the Microsoft Cloud by supporting Microsoft Azure Active Directory and Microsoft Accounts in a converged experience using industry standard OAuth2 and OpenID Connect. The library also supports Microsoft Azure B2C for those using our hosted identity management service.
 
-    The source is branched from MSMAL official master 0.1.1. The pod version is just an internal version.
+    The source is branched from MSAL official master 0.1.1 at time of speaking. The pod version is just an internal version.
 
     Note that for the preview, only iOS is supported with this pod.
                        DESC
@@ -37,7 +30,7 @@ Pod::Spec.new do |s|
   s.prefix_header_file = 'MSAL/AzureSource/MSAL/src/MSAL.pch'
   s.public_header_files = 'MSAL/AzureSource/MSAL/src/public/MSALResult.h', 'MSAL/AzureSource/MSAL/src/public/MSALUIBehavior.h', 'MSAL/AzureSource/MSAL/src/public/MSALUser.h', 'MSAL/AzureSource/MSAL/src/public/MSALTelemetry.h', 'MSAL/AzureSource/MSAL/src/public/MSALError.h', 'MSAL/AzureSource/MSAL/src/public/MSALPublicClientApplication.h', 'MSAL/AzureSource/MSAL/src/public/MSAL.h', 'MSAL/AzureSource/MSAL/src/public/MSALLogger.h'
   s.source_files = 'MSAL/AzureSource/MSAL/src/**/*.{h,m}'
-  s.exclude_files = 'MSAL/AzureSource/MSAL/src/cache/mac/*', 'MSAL/AzureSource/MSAL/src/public/mac/*', 'MSAL/AzureSource/MSAL/src/ui/mac/*'
+  s.exclude_files = 'MSAL/AzureSource/MSAL/src/**/mac/*', 'MSAL/AzureSource/MSAL/src/cache/mac/*', 'MSAL/AzureSource/MSAL/src/public/mac/*', 'MSAL/AzureSource/MSAL/src/ui/mac/*'
   
   # s.resource_bundles = {
   #   'MSAL' => ['MSAL/Assets/*.png']

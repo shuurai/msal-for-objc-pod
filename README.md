@@ -12,7 +12,9 @@ To run/configure the wrapper project, clone the repo, and run `pod install` from
 
 ## Requirements
 
-Note: This is pulls from the official MSAL repo version 0.1.1. Tests are not implemented in this pod as the original source code is expected to be thoroughly tested by the MS team.
+Note: This is configured to pull automatically from the official MSAL repo (at the time of speaking 0.1.1). Tests are not implemented in this pod as the original source code is expected to be thoroughly tested by the MS team. This pod uses spec.prepare_command to automatically parse the git submodule from official MSAL repo for the latest code.
+
+**However, any code relates to 'mac' is currently ignored by this configuration.
 
 ## Installation
 
