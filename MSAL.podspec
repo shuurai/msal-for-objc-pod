@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MSAL'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'Microsoft Access Layer POD.'
 
 # This description is used to generate tags and improve search results.
@@ -34,10 +34,10 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.3'
 
-  s.prefix_header_file = 'MSAL/src/MSAL.pch'
-  s.public_header_files = 'MSAL/src/public/MSALResult.h', 'MSAL/src/public/MSALUIBehavior.h', 'MSAL/src/public/MSALUser.h', 'MSAL/src/public/MSALTelemetry.h', 'MSAL/src/public/MSALError.h', 'MSAL/src/public/MSALPublicClientApplication.h', 'MSAL/src/public/MSAL.h', 'MSAL/src/public/MSALLogger.h'
-  s.source_files = 'MSAL/src/**/*.{h,m}'
-  s.exclude_files = 'MSAL/src/cache/mac/*', 'MSAL/src/public/mac/*', 'MSAL/src/ui/mac/*'
+  s.prefix_header_file = 'MSAL/AzureSource/MSAL/src/MSAL.pch'
+  s.public_header_files = 'MSAL/AzureSource/MSAL/src/public/MSALResult.h', 'MSAL/AzureSource/MSAL/src/public/MSALUIBehavior.h', 'MSAL/AzureSource/MSAL/src/public/MSALUser.h', 'MSAL/AzureSource/MSAL/src/public/MSALTelemetry.h', 'MSAL/AzureSource/MSAL/src/public/MSALError.h', 'MSAL/AzureSource/MSAL/src/public/MSALPublicClientApplication.h', 'MSAL/AzureSource/MSAL/src/public/MSAL.h', 'MSAL/AzureSource/MSAL/src/public/MSALLogger.h'
+  s.source_files = 'MSAL/AzureSource/MSAL/src/**/*.{h,m}'
+  s.exclude_files = 'MSAL/AzureSource/MSAL/src/cache/mac/*', 'MSAL/AzureSource/MSAL/src/public/mac/*', 'MSAL/AzureSource/MSAL/src/ui/mac/*'
   
   # s.resource_bundles = {
   #   'MSAL' => ['MSAL/Assets/*.png']
