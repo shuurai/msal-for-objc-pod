@@ -22,7 +22,13 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    MSALPublicClientApplication *client = [[MSALPublicClientApplication alloc] initWithClientId:CLIENT_ID error:nil];
+    NSError *error = nil;
+    
+    MSALPublicClientApplication *client = [[MSALPublicClientApplication alloc] initWithClientId:CLIENT_ID error:&error];
+    
+    if(error != nil) {
+        NSLog(@"checking for error %@", error.description);
+    }
     
     [client acquireTokenForScopes:@[@"User.Read", @"Calendars.Read"]
                        completionBlock:^(MSALResult *result, NSError *error)
