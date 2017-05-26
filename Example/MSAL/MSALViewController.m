@@ -8,6 +8,7 @@
 
 
 #import <MSAL/MSAL.h>
+#import <MSAL/MSALPublicRTApplication.h>
 #import "MSALViewController.h"
 #define CLIENT_ID @"11744750-bfe5-4818-a1c0-655455f68fa7"
 
