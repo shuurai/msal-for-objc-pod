@@ -25,11 +25,13 @@
     
     NSError *error = nil;
     
-    MSALPublicClientApplication *client = [[MSALPublicClientApplication alloc] initWithClientId:CLIENT_ID error:&error];
+    MSALPublicRTApplication *client = [[MSALPublicRTApplication alloc] initWithClientId:CLIENT_ID error:&error];
     
     if(error != nil) {
         NSLog(@"checking for error %@", error.description);
     }
+    
+    
     
     [client acquireTokenForScopes:@[@"User.Read", @"Calendars.Read"]
                        completionBlock:^(MSALResult *result, NSError *error)
@@ -46,6 +48,7 @@
          MSALUser *user = result.user;
          
          NSLog(@"user infor %@", user.name);
+         NSLog(@"refresh token %@", [client getRefreshToken]);
      }];
 }
 

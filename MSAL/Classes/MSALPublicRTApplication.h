@@ -6,13 +6,16 @@
 //
 //
 
-#ifndef MSALPublicRTApplication_h
-#define MSALPublicRTApplication_h
-#endif /* MSALPublicRTApplication_h */
-
+#import <Foundation/Foundation.h>
 #import <MSAL/MSAL.h>
 
 @interface MSALPublicRTApplication : MSALPublicClientApplication
 
+@property NSString *refreshToken;
+
+/**
+ * Gives back the refresh token
+ */
+- (NSString*)getRefreshToken;
 
 @end

@@ -81,6 +81,8 @@
 		BAB04DF71ED8161B006AB40B /* NSString+MSALHelperMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB04DAF1ED81452006AB40B /* NSString+MSALHelperMethods.m */; };
 		BAB04DF81ED8161B006AB40B /* NSURL+MSALExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB04DB11ED81452006AB40B /* NSURL+MSALExtensions.m */; };
 		BAB04DFA1ED8173D006AB40B /* MSALPublicRTApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB04DF91ED8173D006AB40B /* MSALPublicRTApplication.m */; };
+		BAB04DFF1ED81EA8006AB40B /* MSALTest.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB04DFE1ED81EA8006AB40B /* MSALTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAB04E011ED81F4E006AB40B /* MSALTest.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB04E001ED81F4E006AB40B /* MSALTest.m */; };
 		E18C3255AB3E0112B8B8376D8C457DDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		F14C5A6098DC66F7B6D2F4475C9DF730 /* Pods-MSAL_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D981AF5B2DA827D17ABA29CEE86744AB /* Pods-MSAL_Tests-dummy.m */; };
 		F53A4010373AA39502ED17CC5D4E2AA6 /* MSAL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EE2AC4D3F602A7F7C3DECCC8F7CD84 /* MSAL-dummy.m */; };
@@ -259,6 +261,8 @@
 		BAB04DB11ED81452006AB40B /* NSURL+MSALExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+MSALExtensions.m"; sourceTree = "<group>"; };
 		BAB04DBB1ED81580006AB40B /* MSALPublicRTApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSALPublicRTApplication.h; sourceTree = "<group>"; };
 		BAB04DF91ED8173D006AB40B /* MSALPublicRTApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSALPublicRTApplication.m; sourceTree = "<group>"; };
+		BAB04DFE1ED81EA8006AB40B /* MSALTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MSALTest.h; path = ../MSALTest.h; sourceTree = "<group>"; };
+		BAB04E001ED81F4E006AB40B /* MSALTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSALTest.m; sourceTree = "<group>"; };
 		C0B68D7DE9964B6C36C64F8E65AC9DD7 /* Pods-MSAL_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MSAL_Example-dummy.m"; sourceTree = "<group>"; };
 		C482BA3AF3C2310B189989B87FD6F8E3 /* MSAL-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSAL-umbrella.h"; sourceTree = "<group>"; };
 		D4EE2AC4D3F602A7F7C3DECCC8F7CD84 /* MSAL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MSAL-dummy.m"; sourceTree = "<group>"; };
@@ -427,6 +431,7 @@
 				BAB04D5E1ED81452006AB40B /* MSALUIBehavior.m */,
 				BAB04D5F1ED81452006AB40B /* MSALUIBehavior_Internal.h */,
 				BAB04D601ED81452006AB40B /* MSALUser.m */,
+				BAB04E001ED81F4E006AB40B /* MSALTest.m */,
 				BAB04D611ED81452006AB40B /* oauth2 */,
 				BAB04D641ED81452006AB40B /* pkce */,
 				BAB04D671ED81452006AB40B /* public */,
@@ -540,6 +545,7 @@
 			children = (
 				BAB04D681ED81452006AB40B /* mac */,
 				BAB04D6A1ED81452006AB40B /* MSAL.h */,
+				BAB04DFE1ED81EA8006AB40B /* MSALTest.h */,
 				BAB04D6B1ED81452006AB40B /* MSALError.h */,
 				BAB04D6C1ED81452006AB40B /* MSALLogger.h */,
 				BAB04D6D1ED81452006AB40B /* MSALPublicClientApplication.h */,
@@ -727,16 +733,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAB04DB21ED81486006AB40B /* MSAL.h in Headers */,
-				BAB04DB31ED81486006AB40B /* MSALError.h in Headers */,
-				BAB04DB41ED81486006AB40B /* MSALLogger.h in Headers */,
-				BAB04DB51ED81486006AB40B /* MSALPublicClientApplication.h in Headers */,
 				BAB04DB61ED81486006AB40B /* MSALResult.h in Headers */,
-				BAB04DB71ED81486006AB40B /* MSALTelemetry.h in Headers */,
-				BAB04DB81ED81486006AB40B /* MSALTelemetryApiId.h in Headers */,
 				BAB04DB91ED81486006AB40B /* MSALUIBehavior.h in Headers */,
 				BAB04DBA1ED81486006AB40B /* MSALUser.h in Headers */,
+				BAB04DB71ED81486006AB40B /* MSALTelemetry.h in Headers */,
+				BAB04DB81ED81486006AB40B /* MSALTelemetryApiId.h in Headers */,
+				BAB04DB31ED81486006AB40B /* MSALError.h in Headers */,
+				BAB04DB51ED81486006AB40B /* MSALPublicClientApplication.h in Headers */,
 				BAB04DBC1ED81580006AB40B /* MSALPublicRTApplication.h in Headers */,
+				BAB04DFF1ED81EA8006AB40B /* MSALTest.h in Headers */,
+				BAB04DB41ED81486006AB40B /* MSALLogger.h in Headers */,
+				BAB04DB21ED81486006AB40B /* MSAL.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -856,6 +863,7 @@
 				BAB04DBE1ED8161B006AB40B /* MSALAccessTokenCacheItem.m in Sources */,
 				BAB04DBF1ED8161B006AB40B /* MSALAccessTokenCacheKey.m in Sources */,
 				BAB04DC01ED8161B006AB40B /* MSALBaseTokenCacheItem.m in Sources */,
+				BAB04E011ED81F4E006AB40B /* MSALTest.m in Sources */,
 				BAB04DC11ED8161B006AB40B /* MSALRefreshTokenCacheItem.m in Sources */,
 				BAB04DC21ED8161B006AB40B /* MSALRefreshTokenCacheKey.m in Sources */,
 				BAB04DC31ED8161B006AB40B /* MSALTokenCache.m in Sources */,
