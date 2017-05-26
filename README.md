@@ -9,6 +9,28 @@
 
 To run/configure the wrapper project, clone the repo, and run `pod install` from the Example directory first. Branch it, sugar it and make it better.
 
+## Usage
+
+In order to get refresh token out, please use:
+
+```objective-c
+#import <MSALPublicRTApplication.h> 
+
+MSALPublicRTApplication *client = [[MSALPublicRTApplication alloc] initWithClientId:CLIENT_ID error:&error];
+
+... do the supported authorization ...
+
+NSLog([client getRefreshToken])
+
+
+```
+
+Only the following methods are supported with an refresh token
+
+1. acquireTokenForScopes(scope, completionBlock) 
+2. acquireTokenSilentForScopes(scope, user, authority, completionBlock)
+3. acquireTokenSilentForScopes(scope, user, authority, forceRefresh, correlationId, completionBlock)
+
 
 ## Requirements
 
