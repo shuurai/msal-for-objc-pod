@@ -43,7 +43,12 @@ Only the following methods are supported with an refresh token
 
 Note: This is configured to pull automatically from the official MSAL repo (at the time of speaking 0.1.1). Tests are not implemented in this pod as the original source code is expected to be thoroughly tested by the MS team. This pod uses spec.prepare_command to automatically parse the git submodule from official MSAL repo for the latest code.
 
-**However, any code relates to 'mac' is currently ignored by this configuration.
+**However**, any code relates to 'mac' is currently ignored by this configuration.
+
+
+## Important
+
+The official MSAL is still at its preview phase, subject to change anytime. It is important to check against any version change after 0.1.1, to see if there are any major changes to the file structure which will affect the install/build of the pod into a client project. Development usage should very much follow how it is used on the official MSAL repo/documentation.
 
 
 ## Client Project Installation
