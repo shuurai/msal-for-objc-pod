@@ -18,11 +18,11 @@ Pod::Spec.new do |s|
     Note that for the preview, only iOS is supported with this pod.
                        DESC
 
-  s.homepage         = 'https://github.com/shuurai/msal-for-objc-pod.git'
+  s.homepage         = 'https://git.ap.manulife.com/scm/~shane%20fan%20di/msalpod.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'shuurai' => 'hyperfan@hotmail.com' }
-  s.source           = { :git => 'https://github.com/shuurai/msal-for-objc-pod.git', :tag => s.version.to_s }
+  s.author           = { 'shuurai' => 'shane_fan_di@manulife.com' }
+  s.source           = { :git => 'https://git.ap.manulife.com/scm/~shane%20fan%20di/msalpod.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.3'
