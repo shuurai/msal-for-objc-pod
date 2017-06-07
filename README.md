@@ -60,6 +60,9 @@ it, simply add the following line to your Podfile:
 pod "MSAL"
 ```
 
+Alternatively, modify the Podfile or using command line to add MSAL pod using directly the git repo url.
+
+
 
 ## Pod Update
 
@@ -69,7 +72,7 @@ When podspec, wrapper logic, or the source MSAL files have been changed, it is i
   - modify the podspec, with the new spec number, e.g. 0.2.3, make sure it is newer than the current one on "http://cocoapods.org/pods/MSAL"
   - 'git tag 0.2.3 && git push origin --tags'
   - 'pod spec lint'
-  - 'pod trunk push'
+  - 'pod trunk push' <-- this requires the repo url to be accessible in public to allow cocoapods to pull the pod from
 
 
 
