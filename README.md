@@ -8,7 +8,7 @@
 
 ## Current Pod Trunked Version
 
-0.2.2
+0.2.3
 
 
 ## Example
@@ -34,9 +34,10 @@ NSLog([client getRefreshToken])
 
 Only the following methods are supported with an refresh token
 
-1. acquireTokenForScopes(scope, completionBlock) 
-2. acquireTokenSilentForScopes(scope, user, authority, completionBlock)
-3. acquireTokenSilentForScopes(scope, user, authority, forceRefresh, correlationId, completionBlock)
+1. acquireTokenForScopes(scopes, completionBlock) 
+2. acquireTokenForScopes(scopes, loginHint, uiBehavior, extraQueryParameters, completionBlock) 
+3. acquireTokenSilentForScopes(scopes, user, authority, completionBlock)
+4. acquireTokenSilentForScopes(scopes, user, authority, forceRefresh, correlationId, completionBlock)
 
 
 ## Requirements

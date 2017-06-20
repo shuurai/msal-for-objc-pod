@@ -15,7 +15,7 @@
     
 }
 
-// Acquire tkoen sileng by scopes, user, authority and completion block
+// Acquire token silently by scopes, user, authority and completion block
 - (void)acquireTokenSilentForScopes:(NSArray<NSString *> *)scopes
                                user:(MSALUser *)user
                           authority:(NSString *)authority
@@ -33,7 +33,7 @@
      }];
 }
 
-// Acquire tkoen sileng by scopes, user, authority, forcerefresh, uuid and completion block
+// Acquire token silently by scopes, user, authority, forcerefresh, uuid and completion block
 - (void)acquireTokenSilentForScopes:(NSArray<NSString *> *)scopes
                                user:(MSALUser *)user
                           authority:(NSString *)authority
@@ -53,7 +53,7 @@
      }];
 }
 
-// Acquire tkoen sileng by scopes, and completion block
+// Acquire token by just scopes, and completion block
 - (void)acquireTokenForScopes:(NSArray<NSString *> *)scopes
               completionBlock:(MSALCompletionBlock)completionBlock
 {
@@ -68,6 +68,25 @@
          [self onHandleResult:completionBlock withResult:result];
      }];
 }
+    
+// Acquire token by scopes and extra query and completion block
+- (void)acquireTokenForScopes:(NSArray<NSString *> *)scopes
+                    loginHint:(NSString *)loginHint
+                   uiBehavior:(MSALUIBehavior)uiBehavior
+         extraQueryParameters:(NSDictionary <NSString *, NSString *> *)extraQueryParameters
+              completionBlock:(MSALCompletionBlock)completionBlock;
+    {
+        [super acquireTokenForScopes:scopes loginHint:loginHint uiBehavior:uiBehavior extraQueryParameters:extraQueryParameters completionBlock:^(MSALResult *result, NSError *error)
+         {
+             if (error)
+             {
+                 completionBlock(result, error);
+                 return;
+             }
+             
+             [self onHandleResult:completionBlock withResult:result];
+         }];
+    }
 
 // common result handler
 - (void)onHandleResult:(MSALCompletionBlock)completionBlock withResult:(MSALResult *)result

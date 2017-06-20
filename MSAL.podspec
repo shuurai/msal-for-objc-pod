@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MSAL'
-  s.version          = '0.2.2'
+  s.version          = '0.2.3'
   s.summary          = 'Microsoft Access Layer POD.'
   s.description      = <<-DESC
     The MSAL library preview for iOS gives your app the ability to begin using the Microsoft Cloud by supporting Microsoft Azure Active Directory and Microsoft Accounts in a converged experience using industry standard OAuth2 and OpenID Connect. The library also supports Microsoft Azure B2C for those using our hosted identity management service.
