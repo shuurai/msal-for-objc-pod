@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MSAL'
-  s.version          = '0.2.3'
+  s.version          = '0.2.4'
   s.summary          = 'Microsoft Access Layer POD.'
   s.description      = <<-DESC
     The MSAL library preview for iOS gives your app the ability to begin using the Microsoft Cloud by supporting Microsoft Azure Active Directory and Microsoft Accounts in a converged experience using industry standard OAuth2 and OpenID Connect. The library also supports Microsoft Azure B2C for those using our hosted identity management service.
@@ -18,11 +18,11 @@ Pod::Spec.new do |s|
     Note that for the preview, only iOS is supported with this pod.
                        DESC
 
-  s.homepage         = 'https://git.ap.manulife.com/scm/~shane%20fan%20di/msalpod.git'
+  s.homepage         = 'https://github.com/shuurai/msal-for-objc-pod.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'shuurai' => 'shane_fan_di@manulife.com' }
-  s.source           = { :git => 'https://git.ap.manulife.com/scm/~shane%20fan%20di/msalpod.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/shuurai/msal-for-objc-pod.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.3'
